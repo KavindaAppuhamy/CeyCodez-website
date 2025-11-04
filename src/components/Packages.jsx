@@ -32,7 +32,7 @@ const Packages = () => {
                 <span className="text-5xl sm:text-6xl font-bold text-cyan-400">
                   $100
                 </span>
-                <span className="text-gray-400 text-lg">/month</span>
+                {/* <span className="text-gray-400 text-lg">/month</span> */}
               </div>
               <ul className="space-y-3 text-gray-300 text-sm sm:text-base">
                 <li>✓ 1–5 static or dynamic pages</li>
@@ -56,7 +56,7 @@ const Packages = () => {
                 <span className="text-5xl sm:text-6xl font-bold text-cyan-400">
                   $295
                 </span>
-                <span className="text-gray-400 text-lg">/month</span>
+                {/* <span className="text-gray-400 text-lg">/month</span> */}
               </div>
               <ul className="space-y-3 text-gray-300 text-sm sm:text-base">
                 <li>✓ Up to 10–12 pages/modules</li>
@@ -86,7 +86,7 @@ const Packages = () => {
                 <span className="text-5xl sm:text-6xl font-bold text-cyan-400">
                   $522
                 </span>
-                <span className="text-gray-400 text-lg">/month</span>
+                {/* <span className="text-gray-400 text-lg">/month</span> */}
               </div>
               <ul className="space-y-3 text-gray-300 text-sm sm:text-base">
                 <li>✓ Scalable architecture (MERN)</li>
