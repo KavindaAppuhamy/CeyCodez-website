@@ -1,27 +1,27 @@
 import React from "react";
-import { Code, Smartphone, Globe, Palette, Database, Layers } from "lucide-react";
+import { Code, Server, CloudUpload, Palette, Database, Layers } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
       icon: <Code size={42} />,
-      title: "Web Development",
-      desc: "Modern websites built with React, Node, and Express for exceptional performance and aesthetics.",
+      title: "Front-End Development",
+      desc: "User-friendly and visually appealing web interfaces using React and Tailwind Css",
     },
     {
-      icon: <Smartphone size={42} />,
-      title: "Mobile Apps",
-      desc: "Powerful and scalable mobile apps for Android & iOS using modern technologies and clean design.",
-    },
-    {
-      icon: <Globe size={42} />,
-      title: "MERN Stack Solutions",
-      desc: "Full-stack applications powered by MongoDB, Express, React, and Node for seamless performance.",
+      icon: <Server size={42} />,
+      title: "Back-End Development",
+      desc: "Robust and secure server-side systems built for scalability, APIs, and database integration.",
     },
     {
       icon: <Database size={42} />,
-      title: "Backend Engineering",
-      desc: "Robust and secure server-side systems built for scalability, APIs, and database integration.",
+      title: "Database Management",
+      desc: "Creating and managing efficient and secure database management systems for storing and retrieving data efficiently.",
+    },
+    {
+      icon: <CloudUpload size={42} />,
+      title: "Cloud Deployment",
+      desc: "Deploying and maintaining applications on cloud platforms for optimal performance and scalability.",
     },
     {
       icon: <Palette size={42} />,
