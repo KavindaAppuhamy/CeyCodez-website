@@ -82,7 +82,7 @@ const About = () => {
         </div>
 
         {/* Meet Our Team */}
-        <div className="relative bg-gray-900/60 backdrop-blur-md border border-cyan-500/30 rounded-2xl py-12 sm:py-16 px-4 sm:px-8 transition-all duration-500 hover:border-cyan-400 hover:shadow-[0_0_25px_rgba(34,211,238,0.3)] text-center">
+        <div className="relative rounded-2xl py-12 sm:py-16 px-4 sm:px-8 transition-all duration-500 text-center">
           <h3 className="text-3xl sm:text-4xl font-bold mb-10 text-cyan-400 tracking-tight">
             MEET OUR TEAM
           </h3>
@@ -91,25 +91,26 @@ const About = () => {
             {[
               {
                 name: "Kavinda Appuhamy",
-                role: "Founder & Fullstack Software Engineer",
-                image: "/Kavinda.png", // 👈 your image path
+                role: "Co-Founder & Fullstack Software Engineer",
+                image: "/Kavinda.png",
               },
               {
                 name: "Dhananjaya Perera",
-                role: "Fullstack Software Engineer",
+                role: "Co-Founder & Fullstack Software Engineer",
                 image: "/Dhana.png",
               },
               {
                 name: "Thamalu Amarasinhe",
-                role: "Fullstack Software Engineer",
+                role: "Co-Founder & Fullstack Software Engineer",
                 image: "/Thamalu.png",
               },
             ].map((member, idx) => (
               <div
                 key={idx}
-                className="group text-center transition-all duration-300 hover:scale-105"
+                className="group relative bg-gray-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-2xl p-8 w-full max-w-sm text-center transition-all duration-300 hover:border-cyan-400 hover:shadow-[0_0_25px_rgba(34,211,238,0.4)] hover:scale-105"
               >
-                <div className="w-28 h-28 sm:w-32 sm:h-32 mx-auto mb-5 rounded-full border-4 border-cyan-400 overflow-hidden shadow-[0_0_20px_rgba(34,211,238,0.2)] group-hover:shadow-[0_0_30px_rgba(34,211,238,0.4)] transition-all duration-300">
+                {/* Profile Image */}
+                <div className="w-40 h-40 sm:w-48 sm:h-48 mx-auto mb-6 rounded-full border-4 border-cyan-400 overflow-hidden shadow-[0_0_25px_rgba(34,211,238,0.3)] group-hover:shadow-[0_0_40px_rgba(34,211,238,0.6)] transition-all duration-300">
                   <img
                     src={member.image}
                     alt={member.name}
@@ -117,10 +118,13 @@ const About = () => {
                   />
                 </div>
 
-                <h4 className="font-semibold text-base sm:text-lg mb-1 text-white">
+                {/* Name */}
+                <h4 className="font-semibold text-lg sm:text-xl text-white mb-2">
                   {member.name}
                 </h4>
-                <p className="text-xs sm:text-sm text-gray-400">{member.role}</p>
+
+                {/* Role */}
+                <p className="text-sm sm:text-base text-gray-400">{member.role}</p>
               </div>
             ))}
           </div>
