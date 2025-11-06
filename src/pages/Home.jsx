@@ -18,7 +18,7 @@ const Home = () => {
 
   // Trigger fade-in animation on mount
   useEffect(() => {
-    setTimeout(() => setFadeIn(true), 100);
+    setTimeout(() => setFadeIn(true), 50);
   }, []);
 
   // Smooth scroll to section
@@ -77,7 +77,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className={`min-h-screen bg-gradient-to-br from-gray-950 via-slate-900 to-gray-950 text-white relative overflow-x-hidden transition-opacity duration-1000 ${
+    <div className={`min-h-screen bg-gradient-to-br from-gray-950 via-slate-900 to-gray-950 text-white relative overflow-x-hidden transition-opacity duration-700 ease-in-out ${
       fadeIn ? "opacity-100" : "opacity-0"
     }`}>
       <AnimatedBackground />
@@ -131,7 +131,7 @@ const Home = () => {
         ↑
       </button>
 
-      <style>{`
+      <style jsx global>{`
         ::-webkit-scrollbar {
           width: 8px;
         }

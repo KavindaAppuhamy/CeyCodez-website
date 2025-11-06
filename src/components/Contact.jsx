@@ -281,7 +281,7 @@ const Contact = () => {
               </div>
               <div>
                 <p className="text-sm text-gray-400 mb-1">Address</p>
-                <p className="font-semibold">---</p>
+                <p className="font-semibold">Greenferns, Nattandiya Road, Dankotuwa.</p>
               </div>
             </div>
           </div>

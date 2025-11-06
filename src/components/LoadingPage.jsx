@@ -10,10 +10,10 @@ const LoadingPage = ({ onFinish }) => {
       setProgress((p) => {
         if (p >= 100) {
           clearInterval(timer);
-          // Start transition animation
+          // Start transition animation immediately
           setIsTransitioning(true);
-          // Call onFinish after the transition animation completes
-          setTimeout(onFinish, 1000);
+          // Call onFinish after a shorter transition
+          setTimeout(onFinish, 800);
           return 100;
         }
         return p + 2;
@@ -30,8 +30,8 @@ const LoadingPage = ({ onFinish }) => {
       {/* Center Content */}
       <div className="text-center relative z-10 flex flex-col items-center justify-center w-full h-full">
         {/* Logo */}
-        <div className={`mb-8 flex justify-center transition-all duration-1000 ${
-          isTransitioning ? "scale-150 opacity-0" : "scale-100 opacity-100"
+        <div className={`mb-8 flex justify-center transition-all duration-700 ease-in-out ${
+          isTransitioning ? "scale-[2] opacity-0" : "scale-100 opacity-100"
         }`}>
           <img
             src="/CeyCodez_Logo.webp"
@@ -41,7 +41,7 @@ const LoadingPage = ({ onFinish }) => {
         </div>
 
         {/* Progress Bar */}
-        <div className={`w-[85%] sm:w-[400px] h-3 bg-gray-900 rounded-full border border-cyan-500 mx-auto overflow-hidden mb-5 transition-opacity duration-500 ${
+        <div className={`w-[85%] sm:w-[400px] h-3 bg-gray-900 rounded-full border border-cyan-500 mx-auto overflow-hidden mb-5 transition-opacity duration-300 ${
           isTransitioning ? "opacity-0" : "opacity-100"
         }`}>
           <div
@@ -51,7 +51,7 @@ const LoadingPage = ({ onFinish }) => {
         </div>
 
         {/* Loading Text */}
-        <p className={`text-white text-sm sm:text-base md:text-lg tracking-[0.25em] sm:tracking-[0.3em] transition-opacity duration-500 ${
+        <p className={`text-white text-sm sm:text-base md:text-lg tracking-[0.25em] sm:tracking-[0.3em] transition-opacity duration-300 ${
           isTransitioning ? "opacity-0" : "opacity-100"
         }`}>
           INITIALIZING...
