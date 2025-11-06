@@ -9,6 +9,7 @@ const Navbar = ({ isScrolled, activeSection, smoothScrollTo }) => {
     { name: "ABOUT", id: "about" },
     { name: "SERVICES", id: "services" },
     { name: "PACKAGES", id: "packages" },
+    { name: "PORTFOLIO", id: "portfolio" },
     { name: "CONTACT", id: "contact" },
     { name: "FAQs", id: "faqs" },
   ];

@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import About from "../components/About";
 import Services from "../components/Services";
 import Packages from "../components/Packages";
+import Portfolio from "../components/PortfolioSection"; // ✅ Add this import
 import FAQs from "../components/FAQs";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
@@ -91,6 +92,11 @@ const Home = () => {
 
       <section id="services" className="scroll-mt-20">
         <Services />
+      </section>
+
+      {/* ✅ Add Portfolio Section */}
+      <section id="portfolio" className="scroll-mt-20">
+        <Portfolio />
       </section>
 
       <section id="packages" className="scroll-mt-20">
