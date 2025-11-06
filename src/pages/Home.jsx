@@ -131,7 +131,7 @@ const Home = () => {
         ↑
       </button>
 
-      <style jsx global = "true">{`
+      <style>{`
         ::-webkit-scrollbar {
           width: 8px;
         }
